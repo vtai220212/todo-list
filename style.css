@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #131318;
+  --content-color: #232328;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+  height: 100vh;
+  align-content: center;
+}
+
+.container {
+  width: 900px;
+  margin: 100px auto;
+  padding-top: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: var(--background-color);
+}
+
+.container h1 {
+  text-align: start;
+  padding: 15px 40px;
+  font-size: 40px;
+  background: linear-gradient(to right, #c179e2, #f6f6ff 50%, #6e059e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+.container h3 {
+  text-align: start;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #c179e2, #f6f6ff 50%, #6e059e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header {
+  display: flex;
+  width: 40%;
+  height: 200px;
+  background-color: var(--content-color);
+  margin: 0 10px;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+form {
+  width: 100%;
+  padding: 0 10px;
+  font-size: 16px;
+  display: flex;
+  margin-top: 10px;
+}
+
+form input {
+  width: 100%;
+  border: none;
+  margin-right: 10px;
+  border-radius: 5px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+form button {
+  width: 40px;
+  padding: 10px;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.content-todo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+/* Todos */
+.content {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: 0 10px;
+  flex-direction: column;
+}
+
+.todos {
+  list-style-type: none;
+  padding: 5px 10px;
+  background-color: var(--content-color);
+  width: 100%;
+  border-radius: 10px;
+}
+
+.todos li {
+  color: #fff;
+  padding: 15px 15px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-between;
+  margin: 10px 0;
+  align-items: center;
+  cursor: pointer;
+  height: 36px;
+}
+
+.todos li span {
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.todos li.completed {
+  color: #aaaaaa;
+  text-decoration: line-through;
+}
+
+.todos li:nth-child(odd) {
+  background-color: #444;
+  border-radius: 10px;
+}
+
+.todos li:nth-child(even) {
+  background-color: #7c66f8;
+  border-radius: 10px;
+}
+
+.todos li button {
+  border: none;
+  background-color: #2b1c80;
+  color: #fff;
+  padding: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todos li button:hover {
+  background-color: #cdabf5;
+}
